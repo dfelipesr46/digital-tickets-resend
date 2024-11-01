@@ -10,6 +10,7 @@ export async function POST() {
       to: ['admon.digitalticket@gmail.com'],
       subject: 'Magic Link - Digital Tickets',
       react: NewFeatureEmailTemplate({}),
+      scheduledAt: 'in 1 min',
     });
 
     if (error) {

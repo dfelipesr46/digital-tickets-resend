@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
               <td align="center">
                 <Img
                   alt="React Email logo"
-                  height="82"
+                  height="62"
                   src="https://res.cloudinary.com/dkneova4f/image/upload/v1729258370/logo-dark-vertical_icu2oe.png"
                 />
               </td>
