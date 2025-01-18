@@ -27,23 +27,41 @@ export const RaycastMagicLinkEmail = ({
   magicLink,
 }: RaycastMagicLinkEmailProps) => (
   <Html>
-    <Head />
+    <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet"
+        />
+        <style>
+          {`
+            body {
+              font-family: 'Inter', sans-serif;
+            }
+          `}
+        </style>
+      </Head>
     <Preview>
       Acceso exclusivo para ti: emite tickets para tu evento ya 🎫
     </Preview>
     <Body style={main}>
       <Container style={container}>
-      <Img
-            alt="Digital Tickets logo"
-            height="120"
-            src="https://res.cloudinary.com/dkneova4f/image/upload/v1729258524/X_Cover_-_Digital_Tickets_uk3mtu.png"
-            style={{
-              width: "100%",
-              borderRadius: 12,
-              objectFit: "cover",
-              marginBottom: "45px",
-            }}
-          />
+        <Img
+          alt="Digital Tickets logo"
+          height="120"
+          src="https://res.cloudinary.com/dkneova4f/image/upload/v1729258524/X_Cover_-_Digital_Tickets_uk3mtu.png"
+          style={{
+            width: "100%",
+            borderRadius: 12,
+            objectFit: "cover",
+            marginBottom: "45px",
+          }}
+        />
         <Heading style={heading}>
           Acceso exclusivo, comienza a emitir tickets ahora!
           <br /> <br />
@@ -58,6 +76,7 @@ export const RaycastMagicLinkEmail = ({
                 boxSizing: "border-box",
                 padding: 12,
                 fontWeight: 600,
+                fontFamily: "'Inter', sans-serif",
                 borderRadius: 8,
                 textAlign: "center",
                 backgroundColor: "rgb(79,70,229)",
@@ -118,12 +137,14 @@ export const RaycastMagicLinkEmail = ({
             </li>
           </ul>
           ¡No te lo pierdas! Sé parte de esta experiencia exclusiva y comienza a
-          gestionar tus eventos de una manera más rápida y eficiente. <br /> <br />
+          gestionar tus eventos de una manera más rápida y eficiente. <br />{" "}
+          <br />
           Actúa ahora y sé el primero en usar Digital Tickets. Estamos aquí para
-          ayudarte en cada paso. <br /><br />
-          Si tienes alguna duda, contáctanos. <br /><br />
-          Saludos, El
-          equipo de Digital Tickets
+          ayudarte en cada paso. <br />
+          <br />
+          Si tienes alguna duda, contáctanos. <br />
+          <br />
+          Saludos, El equipo de Digital Tickets
           <br />
         </Text>
         <Hr style={hr} />

@@ -2,6 +2,7 @@ import Footer from "@/components/Footer/footer-email-template";
 import {
   Button,
   Column,
+  Head,
   Hr,
   Html,
   Img,
@@ -14,6 +15,25 @@ import * as React from "react";
 export default function EmailAcercamientoUsuario() {
   return (
     <Html>
+      <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet"
+        />
+        <style>
+          {`
+            body {
+              font-family: 'Inter', sans-serif;
+            }
+          `}
+        </style>
+      </Head>
       <Section style={{ marginTop: 16, marginBottom: 16 }}>
         <Section>
           <Img
@@ -31,9 +51,10 @@ export default function EmailAcercamientoUsuario() {
             <Text
               style={{
                 margin: "0px",
-                fontSize: 24,
+                fontSize: 26,
                 lineHeight: "32px",
                 fontWeight: 600,
+                fontFamily: "'Inter', sans-serif",
                 color: "rgb(17,24,39)",
               }}
             >
@@ -43,6 +64,7 @@ export default function EmailAcercamientoUsuario() {
               style={{
                 marginTop: 8,
                 fontSize: 16,
+                fontFamily: "'Inter', sans-serif",
                 lineHeight: "24px",
                 color: "rgb(107,114,128)",
               }}
@@ -67,6 +89,7 @@ export default function EmailAcercamientoUsuario() {
                     marginTop: 8,
                     marginLeft: "15px",
                     fontSize: 16,
+                    fontFamily: "'Inter', sans-serif",
                     lineHeight: "24px",
                     color: "rgb(107,114,128)",
                   }}
@@ -98,6 +121,7 @@ export default function EmailAcercamientoUsuario() {
                     marginTop: 8,
                     marginLeft: "15px",
                     fontSize: 16,
+                    fontFamily: "'Inter', sans-serif",
                     lineHeight: "24px",
                     color: "rgb(107,114,128)",
                   }}
@@ -128,6 +152,7 @@ export default function EmailAcercamientoUsuario() {
                     marginTop: 8,
                     marginLeft: "15px",
                     fontSize: 16,
+                    fontFamily: "'Inter', sans-serif",
                     lineHeight: "24px",
                     color: "rgb(107,114,128)",
                   }}
@@ -155,6 +180,7 @@ export default function EmailAcercamientoUsuario() {
           style={{
             marginTop: 8,
             fontSize: 16,
+            fontFamily: "'Inter', sans-serif",
             lineHeight: "24px",
             color: "rgb(107,114,128)",
           }}
@@ -172,9 +198,10 @@ export default function EmailAcercamientoUsuario() {
             boxSizing: "border-box",
             padding: 12,
             fontWeight: 600,
+            fontFamily: "'Inter', sans-serif",
             borderRadius: 8,
             textAlign: "center",
-            backgroundColor: "rgb(79,70,229)",
+            backgroundColor: "black",
             color: "rgb(255,255,255)",
             marginBottom: "25px",
           }}
@@ -185,6 +212,7 @@ export default function EmailAcercamientoUsuario() {
           style={{
             marginTop: 8,
             fontSize: 16,
+            fontFamily: "'Inter', sans-serif",
             lineHeight: "24px",
             color: "rgb(107,114,128)",
           }}

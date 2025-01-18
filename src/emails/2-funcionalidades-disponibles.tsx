@@ -2,6 +2,7 @@ import Footer from "@/components/Footer/footer-email-template";
 import {
   Button,
   Column,
+  Head,
   Hr,
   Html,
   Img,
@@ -14,6 +15,25 @@ import * as React from "react";
 export default function FuncionalidadesEmail() {
   return (
     <Html>
+      <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet"
+        />
+        <style>
+          {`
+            body {
+              font-family: 'Inter', sans-serif;
+            }
+          `}
+        </style>
+      </Head>
       <Section style={{ marginTop: 16, marginBottom: 16 }}>
         <Section>
           <Img
@@ -34,7 +54,8 @@ export default function FuncionalidadesEmail() {
                 fontSize: 24,
                 lineHeight: "32px",
                 fontWeight: 600,
-                color: "rgb(17,24,39)",
+                color: "black",
+                fontFamily: "'Inter', sans-serif",
               }}
             >
               Se acerca nuestro lanzamiento🚀
@@ -43,21 +64,22 @@ export default function FuncionalidadesEmail() {
               style={{
                 marginTop: 8,
                 fontSize: 16,
+                fontFamily: "'Inter', sans-serif",
                 lineHeight: "24px",
-                color: "rgb(107,114,128)",
+                color: "black",
               }}
             >
               ¡Estamos cada vez más cerca de nuestro gran lanzamiento! 🎉 <br />{" "}
               <br />
               Queremos que tengas la oportunidad de familiarizarte con nuestra
-              plataforma antes que nadie. Por eso, te invitamos a ver nuestro video tutorial donde te
-              mostramos lo fácil que es gestionar tus eventos con Digital
-              Tickets. 
+              plataforma antes que nadie. Por eso, te invitamos a ver nuestro
+              video tutorial donde te mostramos lo fácil que es gestionar tus
+              eventos con Digital Tickets.
               <br /> <br /> En este video, aprenderás a:
             </Text>
           </Row>
         </Section>
-        
+
         <Section>
           <Hr
             style={{
@@ -65,6 +87,7 @@ export default function FuncionalidadesEmail() {
               marginRight: "0px",
               marginTop: 32,
               marginBottom: 32,
+              fontFamily: "'Inter', sans-serif",
               width: "100%",
               borderWidth: 1,
               borderStyle: "solid",
@@ -88,7 +111,8 @@ export default function FuncionalidadesEmail() {
                     fontSize: 20,
                     fontWeight: 600,
                     lineHeight: "28px",
-                    color: "rgb(17,24,39)",
+                    color: "black",
+                    fontFamily: "'Inter', sans-serif",
                   }}
                 >
                   Configurar y Crear eventos
@@ -100,6 +124,7 @@ export default function FuncionalidadesEmail() {
                     fontSize: 16,
                     lineHeight: "24px",
                     color: "rgb(107,114,128)",
+                    fontFamily: "'Inter', sans-serif",
                   }}
                 ></Text>
               </Column>
@@ -135,19 +160,11 @@ export default function FuncionalidadesEmail() {
                     fontWeight: 600,
                     lineHeight: "28px",
                     color: "rgb(17,24,39)",
+                    fontFamily: "'Inter', sans-serif",
                   }}
                 >
                   Validar Tickets con nuestros sitema QR
                 </Text>
-                <Text
-                  style={{
-                    margin: "0px",
-                    marginTop: 8,
-                    fontSize: 16,
-                    lineHeight: "24px",
-                    color: "rgb(107,114,128)",
-                  }}
-                ></Text>
               </Column>
             </Row>
           </Section>
@@ -163,7 +180,6 @@ export default function FuncionalidadesEmail() {
             }}
           />
         </Section>
-
         <Section>
           <Row>
             <Column style={{ verticalAlign: "baseline" }}>
@@ -182,19 +198,11 @@ export default function FuncionalidadesEmail() {
                   fontWeight: 600,
                   lineHeight: "28px",
                   color: "rgb(17,24,39)",
+                  fontFamily: "'Inter', sans-serif",
                 }}
               >
                 Emitir entradas digitales en cuestión de minutos.
               </Text>
-              <Text
-                style={{
-                  margin: "0px",
-                  marginTop: 8,
-                  fontSize: 16,
-                  lineHeight: "24px",
-                  color: "rgb(107,114,128)",
-                }}
-              ></Text>
             </Column>
           </Row>
         </Section>
@@ -218,10 +226,12 @@ export default function FuncionalidadesEmail() {
           boxSizing: "border-box",
           padding: 12,
           fontWeight: 600,
+          fontFamily: "'Inter', sans-serif",
+
           borderRadius: 8,
           textAlign: "center",
-          backgroundColor: "rgb(79,70,229)",
-          color: "rgb(255,255,255)",
+          backgroundColor: "black",
+          color: "white",
           marginBottom: "25px",
         }}
       >
@@ -232,8 +242,9 @@ export default function FuncionalidadesEmail() {
         style={{
           marginTop: 8,
           fontSize: 16,
+          fontFamily: "'Inter', sans-serif",
           lineHeight: "24px",
-          color: "rgb(107,114,128)",
+          color: "black",
           marginBottom: "15px",
         }}
       >
@@ -241,22 +252,25 @@ export default function FuncionalidadesEmail() {
         <br />
         ¡No dudes en contactarnos!{" "}
         <Button
+          
           href="https://api.whatsapp.com/send/?phone=573218202524&text=Hola%2C+me+gustar%C3%ADa+obtener+m%C3%A1s+informaci%C3%B3n+sobre+sus+servicios.&type=phone_number&app_absent=0"
           style={{
             width: "100%",
             boxSizing: "border-box",
             marginTop: 16,
             borderRadius: 8,
-            backgroundColor: "#25D366",
+            backgroundColor: "black",
             padding: 12,
             textAlign: "center",
             marginBottom: 25,
             fontWeight: 600,
+            fontFamily: "'Inter', sans-serif",
             color: "white",
           }}
         >
           Hablemos vía Whatsapp
-        </Button>{" "}
+        </Button>
+        {" "}
         <br />
         ¡Nos vemos pronto en la nueva era de la gestión de eventos!
         <br /> <br />

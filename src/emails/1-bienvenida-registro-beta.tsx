@@ -7,12 +7,28 @@ import {
   Text,
   Heading,
   Hr,
+  Head,
 } from "@react-email/components";
 import * as React from "react";
 
 export default function BienvenidaEmail() {
   return (
     <Html>
+      <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet"
+        />
+        <style>
+          {`
+            body {
+              font-family: 'Inter', sans-serif;
+            }
+          `}
+        </style>
+      </Head>
       <Section style={{ marginTop: 16, marginBottom: 16 }}>
         <Img
           alt="Herman Miller Chair"
@@ -24,7 +40,6 @@ export default function BienvenidaEmail() {
             objectFit: "cover",
           }}
         />
-        
         <Section
           style={{
             marginTop: 32,
@@ -39,6 +54,8 @@ export default function BienvenidaEmail() {
               lineHeight: "28px",
               fontWeight: 600,
               color: "rgb(79,70,229)",
+              fontFamily: "'Inter', sans-serif",
+              
             }}
           >
             {/* Our new article */}
@@ -48,10 +65,11 @@ export default function BienvenidaEmail() {
             style={{
               margin: "0px",
               marginTop: 8,
-              fontSize: 26,
+              fontSize: 36,
               lineHeight: "36px",
               fontWeight: 600,
               color: "rgb(17,24,39)",
+              fontFamily: "'Inter', sans-serif",
             }}
           >
             ¡Bienvenido a la beta de Digital Tickets! 🎉
@@ -60,7 +78,9 @@ export default function BienvenidaEmail() {
             style={{
               fontSize: 16,
               lineHeight: "24px",
-              color: "rgb(107,114,128)",
+              color: "black",
+              fontFamily: "'Inter', sans-serif",
+              fontWeight: 300,
             }}
           >
             Hola [Nombre], Gracias por unirte a la beta exclusiva de Digital
@@ -78,19 +98,20 @@ export default function BienvenidaEmail() {
             style={{
               marginTop: 16,
               borderRadius: 8,
-              backgroundColor: "#25D366",
+              backgroundColor: "black",
               paddingLeft: 40,
               paddingRight: 40,
               paddingTop: 12,
               paddingBottom: 12,
               marginBottom: 55,
               fontWeight: 600,
-              color: "black",
+              color: "white",
+              fontFamily: "'Inter', sans-serif",
             }}
           >
-            Hablemos vía Whatsapp
+            Contactanos
           </Button>
-        <Hr style={hr} />
+          <Hr style={hr} />
           <Footer></Footer>
         </Section>
       </Section>
